@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
 @import "tailwindcss";
 
 :root {
@@ -24,3 +33,76 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* --- Floating blob animation used on homepage decorative shapes --- */
+@keyframes blob {
+  0%   { transform: translateY(0) scale(1); }
+  25%  { transform: translateY(-8px) scale(1.02); }
+  50%  { transform: translateY(0) scale(1); }
+  75%  { transform: translateY(8px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Utility classes used in the homepage */
+.animate-animate-blob {
+  animation: blob 6s ease-in-out infinite;
+}
+
+/* Helpful delay utility used once for visual variety */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+/* small polish: smooth image rendering */
+img {
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3 { font-family: 'Playfair Display', serif; }
+
+/* Floating blob animation */
+@keyframes blob {
+  0%   { transform: translateY(0) scale(1); }
+  25%  { transform: translateY(-8px) scale(1.02); }
+  50%  { transform: translateY(0) scale(1); }
+  75%  { transform: translateY(8px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); }
+}
+.animate-animate-blob { animation: blob 6s ease-in-out infinite; }
+.animation-delay-2000 { animation-delay: 2s; }
+
+img { image-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+/* fonts (if not already added) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html, body { font-family: 'Poppins', sans-serif; }
+
+/* smooth scroll & small utilities */
+html { scroll-behavior: smooth; }
+
+/* floating blob animation */
+@keyframes blob {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.02); }
+  100% { transform: translateY(0) scale(1); }
+}
+.animate-animate-blob { animation: blob 6s ease-in-out infinite; }
+.animation-delay-2000 { animation-delay: 2s; }
+
+/* image polishing */
+img { image-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+/* hide horizontal scrollbar for nicer look */
+/* hide horizontal scrollbar for nicer look */
+.no-scrollbar::-webkit-scrollbar { height: 8px; }
+.no-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 8px; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Ensure inline SVG sizing doesn't produce layout shifts */
+svg[aria-hidden] { display: inline-block; vertical-align: middle; }
+
